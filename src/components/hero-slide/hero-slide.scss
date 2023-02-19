@@ -1,4 +1,4 @@
-@use '../../scss/' as *;
+@use "../../scss/" as *;
 
 .hero-slide {
     margin-bottom: 3rem;
@@ -12,7 +12,7 @@
     background-size: cover;
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -22,7 +22,7 @@
     }
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
@@ -105,13 +105,13 @@
             transform: translateY(0);
         }
         .title {
-            transition-delay: .3s, .3s;
+            transition-delay: 0.3s, 0.3s;
         }
         .overview {
-            transition-delay: .5s, .5s;
+            transition-delay: 0.5s, 0.5s;
         }
         .btns {
-            transition-delay: .7s, .7s;
+            transition-delay: 0.7s, 0.7s;
         }
     }
 

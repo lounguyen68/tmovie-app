@@ -1,4 +1,4 @@
-@use '../../scss' as *;
+@use "../../scss" as *;
 
 .logo {
     font-size: 2.5rem;
@@ -14,8 +14,6 @@
             margin-right: 0;
             width: 30px;
         }
-
-
     }
 }
 
@@ -23,10 +21,10 @@
     height: $header-height;
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     z-index: 99;
-    transition: height .3s ease, background-color .3s ease;
+    transition: height 0.3s ease, background-color 0.3s ease;
 
     &.shrink {
         height: $header-shrink-height;
@@ -56,18 +54,19 @@
             font-size: 1.5rem;
 
             &::after {
-                content: '';
+                content: "";
                 position: absolute;
                 bottom: 0;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 0;
-                transition: width .5s ease;
+                transition: width 0.5s ease;
                 height: 2px;
                 background-color: $main-color;
             }
-            
-            &.active::after, &:hover::after {
+
+            &.active::after,
+            &:hover::after {
                 width: 100%;
             }
         }
