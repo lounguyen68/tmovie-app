@@ -48,11 +48,15 @@ const MovieList = (props) => {
                 spaceBetween={10}
                 slidesPerView={'auto'}
             >
-                {items.map((item, index) => (
+                {items.map((item, index) => {
+                    
+                    if ((item.poster_path || item.backdrop_path) === null) return null;
+                    
+                    return (
                     <SwiperSlide key={index} item={item}>
                         <MovieCard item={item} category={props.category}/>
                     </SwiperSlide>
-                ))}
+                )})}
             </Swiper>
         </div>
     );
