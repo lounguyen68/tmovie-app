@@ -13,3 +13,8 @@
         text-align: center;
     } 
 }
+.movie-search {
+    @include mobile {
+        @include flex(center, center);
+    }
+}
