@@ -75,7 +75,7 @@ const HeroSlideItem = (props) => {
 
         if (videos.results.length > 0) {
             const videoSrc =
-                "http://www.youtube.com/embed/" + videos.results[0].key;
+                "https://www.youtube.com/embed/" + videos.results[0].key;
             modal
                 .querySelector(".modal__content > iframe")
                 .setAttribute("src", videoSrc);
